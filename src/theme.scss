@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic&amp;subset=latin-ext');
+
+@import '~@angular/material/theming';
+
+$general-typography: mat-typography-config(
+  $font-family: '"Open Sans", "Helvetica Neue", sans-serif',
+  $body-2:        mat-typography-level(14px, 24px, 600)
+);
+
+$secondary-typography: mat-typography-config(
+  $font-family: 'Roboto, sans-serif'
+);
+
+@include mat-core($general-typography);
+
+$bv-brand: (
+  50: #FCEAE3,
+  100: #F7CBB9,
+  200: #F2A98A,
+  300: #ED865B,
+  400: #E96C37,
+  500: #E55214,
+  600: #E24B12,
+  700: #DE410E,
+  800: #DA380B,
+  900: #D32806,
+  A100: #FFFCFC,
+  A200: #FFCFC9,
+  A400: #FFA396,
+  A700: #FF8C7C,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: $black-87-opacity,
+    A200: $black-87-opacity,
+    A400: $black-87-opacity,
+    A700: white,
+  )
+);
+
+$bv-grey: (
+  50 : #e5e5e5,
+  100 : #bebebf,
+  200 : #939394,
+  300 : #676869,
+  400 : #474749,
+  500 : #262729,
+  600 : #222324,
+  700 : #1c1d1f,
+  800 : #171719,
+  900 : #0d0e0f,
+  A100 : #6767ee,
+  A200 : #3a3ae9,
+  A400 : #0000ef,
+  A700 : #0000d5,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #ffffff,
+  )
+);
+
+$bv-palette-primary: mat-palette($bv-brand);
+$bv-palette-accent:  mat-palette($bv-grey);
+
+$bv-theme: mat-light-theme($bv-palette-primary, $bv-palette-accent);
+
+@include angular-material-theme($bv-theme);

@@ -1,0 +1,70 @@
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%  !important;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-bottom: 1px solid #F4F4F4;
+}
+
+.eventSelector {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.eventButton {
+  background-color: #212224;
+  color: #D8D8D8;
+  border-radius: 25px;
+  width: 20%;
+  justify-content: space-between;
+}
+
+:host ::ng-deep .mat-menu-panel {
+  min-width: 223px !important;
+  max-width: 223px !important;
+}
+
+.mat-toolbar-single-row {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.eventText {
+  float: left;
+}
+
+.eventAngleDown {
+  float: right;
+}
+
+.headerLogoBox {
+  background-image: linear-gradient(to bottom, #eb5f0d, #e6530b, #e14709, #dc3909, #d72909);
+  padding: 15px 15px;
+}
+
+.appTitle {
+  margin-left: 50px;
+}
+
+.headerIcon {
+  width: 5%;
+  color: #D8D8D8;
+  border-left: 1px solid #F4F4F4;
+  border-right: 1px solid #F4F4F4;
+  text-align: center;
+  padding: 15px 0px;
+}

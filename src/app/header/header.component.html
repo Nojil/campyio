@@ -1,0 +1,41 @@
+<mat-toolbar class="fixed-header" layout="row" layout-align="center center">
+  <span class="headerLogoBox">
+    <a routerLink="/events"><img src="../../assets/imgs/Logo.png"></a>
+  </span>
+    <span class="appTitle">
+      <p>SEP Rockies</p>
+    </span>
+    <span class="eventSelector">
+      <button mat-button [matMenuTriggerFor]="eventMenu" class="eventButton">
+        <span class="eventText">
+          All Events
+        </span>
+        <span class="eventAngleDown">
+          <fa-icon [icon]="['fas', 'angle-down']" size="lg"></fa-icon>
+        </span>
+      </button>
+      <mat-menu #eventMenu="matMenu" class="eventMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+    </span>
+    <span class="headerIcon">
+      <fa-icon [icon]="['far', 'envelope']" size="lg"></fa-icon>
+    </span>
+    <span class="headerIcon">
+      <fa-icon [icon]="['far', 'bell']" size="lg"></fa-icon>
+    </span>
+    <span>
+      <button mat-button [matMenuTriggerFor]="profileMenu" class="profileButton">
+        <span>
+          <img src="../../assets/imgs/profilePic.png">
+          Charles Lang
+          <fa-icon [icon]="['fas', 'angle-down']" size="lg"></fa-icon>
+        </span>
+      </button>
+      <mat-menu #profileMenu="matMenu" class="profileMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+    </span>
+</mat-toolbar>

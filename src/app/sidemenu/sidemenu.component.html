@@ -1,0 +1,26 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav class="sidenav" mode="side" opened>
+    <span class="sideMenuIcon">
+      <a routerLink="/participants" class="iconLink"><fa-icon [icon]="['fas', 'users']" size="2x"></fa-icon></a>
+    </span>
+    <span class="sideMenuIcon">
+      <fa-icon [icon]="['far', 'calendar']" size="2x"></fa-icon>
+    </span>
+    <span class="sideMenuIcon">
+      <fa-icon [icon]="['far', 'object-group']" size="2x"></fa-icon>
+    </span>
+    <span class="sideMenuIcon">
+      <fa-icon [icon]="['fas', 'boxes']" size="2x"></fa-icon>
+    </span>
+    <span class="sideMenuIcon">
+      <fa-icon [icon]="['fas', 'server']" size="2x"></fa-icon>
+    </span>
+    <span class="sideMenuIcon">
+      <fa-icon [icon]="['far', 'file-alt']" size="2x"></fa-icon>
+    </span>
+  </mat-sidenav>
+  <mat-sidenav-content class="mainContent">
+    <!--<app-events></app-events>-->
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
