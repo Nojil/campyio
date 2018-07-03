@@ -1,0 +1,61 @@
+<div class="flex-container" fxLayout="row">
+  <mat-toolbar class="subMenu">
+    <span class="pageTitle">
+      <p>Events</p>
+    </span>
+    <span class="spacer"></span>
+    <span class="subMenuItem">
+      <button mat-button [matMenuTriggerFor]="upcomingEventsMenu" class="upcomingEvents">
+        <span>
+          Upcoming Event
+          <fa-icon [icon]="['fas', 'angle-down']" size="lg"></fa-icon>
+        </span>
+      </button>
+      <mat-menu #upcomingEventsMenu="matMenu" class="upcomingEventsMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+    </span>
+    <span class="subMenuItem">
+      <mat-form-field appearance="legacy" floatLabel="never">
+        <mat-label>Search here</mat-label>
+        <input matInput>
+        <fa-icon matSuffix [icon]="['fas', 'search']" size="md"></fa-icon>
+      </mat-form-field>
+    </span>
+    <span class="subMenuItem">
+      <button mat-button class="newEventBtn">New Event</button>
+    </span>
+  </mat-toolbar>
+</div>
+<div class="flex-container"
+     fxLayout="row"
+     fxLayout.xs="column"
+     fxLayoutAlign="center center"
+     fxLayoutAlign.xs="start">
+  <div class="flex-item eventCard" fxFlex="33%">
+    <app-event></app-event>
+  </div>
+  <div class="flex-item eventCard" fxFlex="33%">
+    <app-event></app-event>
+  </div>
+  <div class="flex-item eventCard" fxFlex="33%">
+    <app-event></app-event>
+  </div>
+</div>
+
+<div class="flex-container"
+     fxLayout="row"
+     fxLayout.xs="column"
+     fxLayoutAlign="center center"
+     fxLayoutAlign.xs="start">
+  <div class="flex-item eventCard" fxFlex="33%">
+    <app-event></app-event>
+  </div>
+  <div class="flex-item eventCard" fxFlex="33%">
+    <app-event></app-event>
+  </div>
+  <div class="flex-item eventCard" fxFlex="33%">
+    <app-event></app-event>
+  </div>
+</div>

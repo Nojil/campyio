@@ -1,0 +1,22 @@
+.subMenu {
+  background-color: #FCFCFC;
+  justify-content: space-between;
+  color: #5F6164;
+}
+
+.pageTitle {
+  margin-left: 35px;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.subMenuItem {
+  margin: 0px 10px;
+}
+
+.newParticipantBtn {
+  background-image: linear-gradient(to bottom, #eb5f0d, #e6530b, #e14709, #dc3909, #d72909);
+  color: #fff;
+}

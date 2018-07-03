@@ -1,0 +1,50 @@
+.eventCard {
+  padding-bottom: 0;
+}
+
+.eventTitle {
+  margin-bottom: 0;
+}
+.eventLocation {
+  margin-bottom: 30px;
+}
+
+.eventContent {
+  justify-content: space-between;
+}
+
+.eventFooter {
+  border-top: 1px solid #D8D8D8;
+  background-color: #EBEBEB;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 0 -8px -25px -8px;
+}
+
+.fc-alt {
+  color: #D8D8D8;
+
+  fa-icon {
+    margin-right: 10px;
+  }
+}
+
+.eventPercent {
+  background-image: linear-gradient(to bottom, #eb5f0d, #e6530b, #e14709, #dc3909, #d72909);
+  font-size: 14px;
+  border-radius: 20px;
+  padding: 7px 10px;
+  margin: 5px 0px;
+  color: #fff;
+}
+
+.eventProgressBar {
+  margin: 0 -24px 16px -24px;
+}
+
+.eventBar {
+  height: 3px;
+  background-color: #D8612B;
+  z-index: 999;
+  width: 80%;
+}
