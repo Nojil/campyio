@@ -22,7 +22,9 @@ import {
   MatSidenavModule,
   MatGridListModule,
   MatSelectModule,
-  MatMenuModule
+  MatMenuModule,
+  MatTableModule,
+  MatPaginatorModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -56,6 +58,8 @@ import { ParticipantsComponent } from './MainContent/participants/participants/p
     MatGridListModule,
     MatSelectModule,
     MatMenuModule,
+    MatTableModule,
+    MatPaginatorModule,
     HttpClientModule,
     FlexLayoutModule,
     FontAwesomeModule
