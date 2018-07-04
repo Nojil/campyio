@@ -35,6 +35,8 @@ import { EventsComponent } from './MainContent/events/events/events.component';
 import { EventComponent } from './MainContent/events/event/event.component';
 import { ParticipantsComponent } from './MainContent/participants/participants/participants.component';
 
+import { ParticipantStatusPipe } from './Pipes/participant-status.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +44,8 @@ import { ParticipantsComponent } from './MainContent/participants/participants/p
     SidemenuComponent,
     EventsComponent,
     EventComponent,
-    ParticipantsComponent
+    ParticipantsComponent,
+    ParticipantStatusPipe
   ],
   imports: [
     BrowserModule,

@@ -21,6 +21,86 @@
   color: #fff;
 }
 
+.participantStatusBtn {
+  width: 100%;
+}
+/deep/ .mat-button-wrapper {
+  width: 100%;
+
+  span {
+    float: left;
+  }
+
+  fa-icon {
+    float: right;
+  }
+}
+
+.statusCirRed {
+  height: 6px;
+  width: 6px;
+  content: '';
+  border: 1px solid #E25141;
+  background-color: #E25141;
+  border-radius: 50%;
+  margin-right: 10px;
+  padding: 0;
+  display: inline-block;
+}
+
+.statusCirGreen {
+  height: 6px;
+  width: 6px;
+  content: '';
+  border: 1px solid #6DE5B9;
+  background-color: #6DE5B9;
+  border-radius: 50%;
+  margin-right: 10px;
+  padding: 0;
+  display: inline-block;
+}
+
+.statusCirYellow {
+  height: 6px;
+  width: 6px;
+  content: '';
+  border: 1px solid #EDC34E;
+  background-color: #EDC34E;
+  border-radius: 50%;
+  margin-right: 10px;
+  padding: 0;
+  display: inline-block;
+}
+
+.participantStatusMenu {
+  max-width: none !important;
+  width: 100% !important;
+}
+
 table {
   width: 100%;
+
+  .mat-header-cell {
+    color: #D8D8D8;
+  }
+
+  .mat-cell {
+    color: #808080;
+  }
+}
+
+.mat-column-img {
+  width: 7%;
+}
+
+.mat-column-name {
+  width: 40%;
+}
+
+.mat-column-age {
+  width: 8%;
+}
+
+.mat-column-applicationDate {
+  width: 18%;
 }

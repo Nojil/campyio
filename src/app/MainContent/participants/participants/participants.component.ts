@@ -26,16 +26,16 @@ export interface Participant {
 }
 
 const ELEMENT_DATA: Participant[] = [
-  {img: '', name: 'test name', age: 27, applicationDate: '09 July 2018', status: 1},
-  {img: '', name: 'test name', age: 27, applicationDate: '09 July 2018', status: 1},
-  {img: '', name: 'test name', age: 27, applicationDate: '09 July 2018', status: 1},
-  {img: '', name: 'test name', age: 27, applicationDate: '09 July 2018', status: 1},
-  {img: '', name: 'test name', age: 27, applicationDate: '09 July 2018', status: 1},
-  {img: '', name: 'test name', age: 27, applicationDate: '09 July 2018', status: 1},
-  {img: '', name: 'test name', age: 27, applicationDate: '09 July 2018', status: 1},
-  {img: '', name: 'test name', age: 27, applicationDate: '09 July 2018', status: 1},
-  {img: '', name: 'test name', age: 27, applicationDate: '09 July 2018', status: 1},
-  {img: '', name: 'test name', age: 27, applicationDate: '09 July 2018', status: 1},
-  {img: '', name: 'test name', age: 27, applicationDate: '09 July 2018', status: 1},
-  {img: '', name: 'test name', age: 27, applicationDate: '09 July 2018', status: 1},
+  {img: '../../../assets/imgs/avatar.png', name: 'Natalie Daisi Brooke', age: 27, applicationDate: '09 July 2018', status: 1},
+  {img: '../../../assets/imgs/avatar.png', name: 'Natalie Daisi Brooke', age: 27, applicationDate: '09 July 2018', status: 2},
+  {img: '../../../assets/imgs/avatar.png', name: 'Natalie Daisi Brooke', age: 27, applicationDate: '09 July 2018', status: 0},
+  {img: '../../../assets/imgs/avatar.png', name: 'Natalie Daisi Brooke', age: 27, applicationDate: '09 July 2018', status: 1},
+  {img: '../../../assets/imgs/avatar.png', name: 'Natalie Daisi Brooke', age: 27, applicationDate: '09 July 2018', status: 2},
+  {img: '../../../assets/imgs/avatar.png', name: 'Natalie Daisi Brooke', age: 27, applicationDate: '09 July 2018', status: 0},
+  {img: '../../../assets/imgs/avatar.png', name: 'Natalie Daisi Brooke', age: 27, applicationDate: '09 July 2018', status: 1},
+  {img: '../../../assets/imgs/avatar.png', name: 'Natalie Daisi Brooke', age: 27, applicationDate: '09 July 2018', status: 2},
+  {img: '../../../assets/imgs/avatar.png', name: 'Natalie Daisi Brooke', age: 27, applicationDate: '09 July 2018', status: 0},
+  {img: '../../../assets/imgs/avatar.png', name: 'Natalie Daisi Brooke', age: 27, applicationDate: '09 July 2018', status: 1},
+  {img: '../../../assets/imgs/avatar.png', name: 'Natalie Daisi Brooke', age: 27, applicationDate: '09 July 2018', status: 2},
+  {img: '../../../assets/imgs/avatar.png', name: 'Natalie Daisi Brooke', age: 27, applicationDate: '09 July 2018', status: 0}
 ];
