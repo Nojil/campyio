@@ -5,6 +5,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {FlexLayoutModule} from '@angular/flex-layout';
 
+// Firebase Imports
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { environment } from './../environments/environment';
+
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
@@ -36,6 +42,7 @@ import { EventComponent } from './MainContent/events/event/event.component';
 import { ParticipantsComponent } from './MainContent/participants/participants/participants.component';
 
 import { ParticipantStatusPipe } from './Pipes/participant-status.pipe';
+import { ParticipantComponent } from './MainContent/participants/participant/participant.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +52,8 @@ import { ParticipantStatusPipe } from './Pipes/participant-status.pipe';
     EventsComponent,
     EventComponent,
     ParticipantsComponent,
-    ParticipantStatusPipe
+    ParticipantStatusPipe,
+    ParticipantComponent
   ],
   imports: [
     BrowserModule,
@@ -65,7 +73,11 @@ import { ParticipantStatusPipe } from './Pipes/participant-status.pipe';
     MatPaginatorModule,
     HttpClientModule,
     FlexLayoutModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    // Firebase Imports
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

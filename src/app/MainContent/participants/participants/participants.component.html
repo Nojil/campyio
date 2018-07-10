@@ -23,13 +23,17 @@
      fxLayoutAlign.xs="start">
   <div class="flex-item" fxFlex="95%">
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>  </th>
+        <td mat-cell *matCellDef="let Participant">{{ Participant.id }} </td>
+      </ng-container>
       <ng-container matColumnDef="img">
         <th mat-header-cell *matHeaderCellDef>  </th>
         <td mat-cell *matCellDef="let Participant"><img class="my-2" src="{{ Participant.img }}" alt="" /> </td>
       </ng-container>
       <ng-container matColumnDef="name">
         <th mat-header-cell *matHeaderCellDef> Name </th>
-        <td mat-cell *matCellDef="let Participant"> {{Participant.name}} </td>
+        <td mat-cell *matCellDef="let Participant"> <span style="cursor:pointer;" (click)="navigate(Participant.id)">{{Participant.name}}</span></td>
       </ng-container>
       <ng-container matColumnDef="age">
         <th mat-header-cell *matHeaderCellDef> Age </th>

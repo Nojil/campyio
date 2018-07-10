@@ -1,0 +1,24 @@
+<div class="flex-container" fxLayout="row">
+  <mat-toolbar class="subMenu">
+    <span class="pageTitle">
+      <button mat-stroked-button routerLink="/participants"><fa-icon matSuffix [icon]="['fas', 'arrow-left']" size="md"></fa-icon> Participants</button>
+    </span>
+    <span class="participantSubMenuName">
+      <h3>Camper #103: Natalie Lang</h3>
+    </span>
+    <span class="spacer"></span>
+    <span class="subMenuItem">
+      <button mat-button [matMenuTriggerFor]="actionMenu" class="actions">
+        <span>
+          Action
+          <fa-icon [icon]="['fas', 'angle-down']" size="lg"></fa-icon>
+        </span>
+      </button>
+      <mat-menu #actionMenu="matMenu" class="actionMenus">
+        <button mat-menu-item><fa-icon [icon]="['fas', 'random']" size="lg" class="icon"></fa-icon> Change Status</button>
+        <button mat-menu-item><fa-icon [icon]="['far', 'envelope']" size="lg" class="icon"></fa-icon> Email Participants</button>
+        <button mat-menu-item><fa-icon [icon]="['far', 'edit']" size="lg" class="icon"></fa-icon> Edit Participants</button>
+      </mat-menu>
+    </span>
+  </mat-toolbar>
+</div>
